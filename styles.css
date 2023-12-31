@@ -24,30 +24,57 @@ a{
     color: white;
 }   
 li.nav-item {
-    margin: 20px;
-}
-.header h1{
-    color: #2cd997;
-    margin-top: 17rem;
-    text-align: center;
+    margin: 15px;
 }
 
 /* section 2 */
-.part1 .container h2{
+.part1 h2{
+    margin-top: 5px;
     text-align: center;
     padding: 58px 0px 12px 0px;
-    border-bottom:solid #2cd997 5px;
+    font-family: 'Sevillana', cursive;
+    font-size: 50px; 
+}
+.lines{
+    width: 60%;
+    position: relative;
+    margin: -18px 0px 30px 84px;
+}
+.lines::after, .lines::before{
+    content: '';
+    position: absolute;
+    margin: auto;
+    height: 2px;
+    background: #2cd997;
+    width: 42%;
+    bottom: 50%;
+}
+.lines::after{
+    left: 0;
+}
+.lines::before{
+    right: 0;
+}
+.diamond{
+    height: 20px;
+    width: 20px;
+    border: 2px solid #2cd997;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 20%;
+    margin: auto;
+    transform: rotate(45deg);
 }
 .part2 img {
     width: 100%;
-    height: 20rem;
+    height: 25rem;
     margin: 0px 0px 12px 0px;
     border-radius: 10px;
     display: block;
 }
-.part2{
-    background: rgb(11,206,152);
-    background: radial-gradient(circle, rgba(11,206,152,1) 0%, rgba(16,11,57,1) 84%);
+.part2{ 
+    background-color: rgb(228, 225, 225);
     padding: 30px;
 }
 .wrapper{
@@ -78,9 +105,13 @@ li.nav-item {
     color: #2cd997;
     text-align: center;
 }
-.content p{
+.content tr{
     color: white;
     text-align: center;
+    border-style: none;
+}
+.content td{
+    border: none;
 }
 .content > *{
     transform: translateY(25px);
@@ -100,8 +131,8 @@ li.nav-item {
 }
 .btn1::before, .btn1::after{
     content: "";
-    height: 4px;
-    background-color: black;
+    height: 2px;
+    background-color: gray;
     display: block;
 }
 .btn1{
@@ -114,7 +145,7 @@ li.nav-item {
 .part3 {
     position: relative;
     background-image: url('img14.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
     height: 400px;
   }
   
@@ -125,17 +156,16 @@ li.nav-item {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0, 0.6);
+    background-color: rgba(0,0,0, 0.5);
   }
   .part3::after {
-    content: 'For Inquiry';
+    content: 'BECOME A MODEL';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 40px;
     text-align: center;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
@@ -156,14 +186,16 @@ li.nav-item {
   }
 
   /* section 4 */
-.part4 h2{
+  .part4 h2{
+    margin-top: 5px;
     text-align: center;
-    border-bottom: 5px solid #2cd997;
     padding: 58px 0px 12px 0px;
-}
+    font-family: 'Sevillana', cursive;
+    font-size: 50px;    
+  }
 .part5 img{
     width: 100%;
-    height: 25rem;
+    height: 450px;
     margin: 0px 0px 12px 0px;
     border-radius: 5px;
 }
@@ -175,7 +207,8 @@ li.nav-item {
 }
 .part5 p{
     text-align: center;
-    text-decoration: 2px underline #2cd997;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .part5 button{
     display: block;
@@ -190,15 +223,17 @@ li.nav-item {
 
 /* section 5 */
 .part6 h2{
+    margin-top: 5px;
     text-align: center;
-    border-bottom: 5px solid #2cd997;
     padding: 58px 0px 12px 0px;
+    font-family: 'Sevillana', cursive;
+    font-size: 50px;  
 }
 .part7{
     background-image: url('img19.jpeg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 300px;
+    min-height: 53vh;
 }
 .group1{
     margin-top: 54px;
@@ -210,35 +245,44 @@ li.nav-item {
     margin: auto;
     display: block;
     border: none;
-    border-radius: 5px;
-    background-color: #2dc997;
+    border-radius: 2px;
+    background-color: whitesmoke;;
     width: 40%;
-    padding: 10px;
+    padding: 15px;
+    text-align: left;
 }
 .group2 button{
     display: block;
     margin: auto;
     border: none;
     border-radius: 5px;
-    background-color: #2dc997;
+    background-color: whitesmoke;
     width: 40%;
-    padding: 10px;
+    padding: 15px;
+    text-align: left;    
+}
+button i{
+    color:#2cd997;
+    font-size:x-large;
 }
 
 /* section 6 */
 .part8 h2{
     text-align: center;
-    border-bottom: 5px solid #2cd997;
     padding: 58px 0px 12px 0px;
+    font-family: 'Sevillana', cursive;
+    font-size: 50px;
 }
-.part9 {
-    position: relative;
-    background-image: url('img20.jpeg');
-    background-size: 100% 100%;
+.part9 img {
+    width: 100%;
     height: 400px;
+    background-color: rgba(0,0,0, 0.6);
   }
-  
-  .part9::before {
+.text9{
+    color: white;
+    margin: -300px 0px 92px 222px;
+  }
+  /* .part9::before {
     content: '';
     position: absolute;
     top: 0;
@@ -248,7 +292,7 @@ li.nav-item {
     background-color: rgba(0,0,0, 0.6);
   }
   .part9::after {
-    content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi eos mollitia ducimus libero earum sequi vitae excepturi harum, assumenda corrupti soluta, neque, laudantium molestiae ex omnis aut! Tenetur, fugit totam. ';
+    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -259,7 +303,7 @@ li.nav-item {
     text-align: center;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-  }
+  } */
   .part11{
     text-align: center; 
   }
@@ -287,11 +331,10 @@ li.nav-item {
     margin-top: -84px;
     margin-bottom: -20px;
 }
-.foot h2{
+.foot h1{
     color: white;
     text-align: center;
     margin-top: 58px;
-    text-decoration: 2px underline #2cd997;
 }
 .foot h5{
     color: white;
@@ -302,7 +345,11 @@ li.nav-item {
     color: white;
     text-align: center;
 }
-  
+.card1{
+    overflow: hidden;
+    border-radius: 3px;
+}
+
 @media only screen and (max-width: 600px) {
     ul.navbar-nav {
         direction: rtl;
